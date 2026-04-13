@@ -1,5 +1,5 @@
 // -----------------------------------------------------------
-// Dependency Injection — Service Registration
+// Dependency Injection - Service Registration
 // -----------------------------------------------------------
 
 using Microsoft.Extensions.DependencyInjection;
@@ -33,7 +33,7 @@ public static class DependencyInjection
             options.InstanceName = "TaskFlow_";
         });
 
-        // Options pattern — strongly typed configuration
+        // Options pattern - strongly typed configuration
         services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
         services.Configure<CacheOptions>(configuration.GetSection("Cache"));
 
@@ -47,7 +47,7 @@ public static class DependencyInjection
 }
 
 // -----------------------------------------------------------
-// Options classes — strongly typed configuration
+// Options classes - strongly typed configuration
 // -----------------------------------------------------------
 
 public class JwtOptions

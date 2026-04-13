@@ -1,5 +1,5 @@
 // -----------------------------------------------------------
-// Endpoints — Minimal API style
+// Endpoints - Minimal API style
 // -----------------------------------------------------------
 
 using FluentValidation;

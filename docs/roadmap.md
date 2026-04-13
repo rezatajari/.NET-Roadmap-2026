@@ -24,7 +24,7 @@ Random YouTube videos and "complete" courses teach you *about* technologies. The
 
 This roadmap is built around one idea: **learn by building, in the right order.**
 
-Every step mirrors what real .NET developers do at real companies. You won't learn Redis because it's on a fancy diagram — you'll learn it when your API is slow and you need caching.
+Every step mirrors what real .NET developers do at real companies. You won't learn Redis because it's on a fancy diagram - you'll learn it when your API is slow and you need caching.
 
 No fluff. No "learn everything." Just the path that gets you hired.
 
@@ -101,7 +101,7 @@ This is the core of the roadmap. Follow these steps **in order**. Don't skip ahe
 **Real-world example:** Every production app uses a relational database. Most .NET shops use SQL Server or PostgreSQL with EF Core. This is non-negotiable knowledge.
 
 **Common beginner mistakes:**
-- Not learning raw SQL basics — EF Core is a tool, not a replacement for understanding databases
+- Not learning raw SQL basics - EF Core is a tool, not a replacement for understanding databases
 - Creating a generic repository that wraps DbContext (adds complexity, zero value)
 - Forgetting to use migrations in a team workflow
 - Using `Include()` everywhere without understanding the SQL it generates
@@ -170,7 +170,7 @@ This is the core of the roadmap. Follow these steps **in order**. Don't skip ahe
 **What you're building:** Secure your API. Only authenticated users can access their own tasks. Add JWT authentication and role-based access.
 
 **What you need to learn:**
-- JWT (JSON Web Tokens) — how they work, not just copy-paste
+- JWT (JSON Web Tokens) - how they work, not just copy-paste
 - ASP.NET Core Identity (basics)
 - Authentication middleware
 - Authorization policies and `[Authorize]` attribute
@@ -273,7 +273,7 @@ This is the core of the roadmap. Follow these steps **in order**. Don't skip ahe
 - Building your own message bus
 - Complex saga patterns
 
-**Real-world example:** Every production system has background work — sending emails, processing payments, generating reports. Companies use background services for simple tasks and message queues when services need to communicate.
+**Real-world example:** Every production system has background work - sending emails, processing payments, generating reports. Companies use background services for simple tasks and message queues when services need to communicate.
 
 **Common beginner mistakes:**
 - Using `Task.Run()` inside a controller (fire and forget = data loss)
@@ -506,7 +506,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ### Project 1: TaskFlow API
 **Roadmap Step:** 1-3
-**Problem it solves:** Personal task management — creating, assigning, tracking, and completing tasks.
+**Problem it solves:** Personal task management - creating, assigning, tracking, and completing tasks.
 
 **What it teaches:**
 - CRUD operations
@@ -524,7 +524,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ---
 
-### Project 2: AuthGuard — Authentication Service
+### Project 2: AuthGuard - Authentication Service
 **Roadmap Step:** 4
 **Problem it solves:** User registration, login, and token management.
 
@@ -543,7 +543,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ---
 
-### Project 3: ShipReady — Deployment-Ready API Template
+### Project 3: ShipReady - Deployment-Ready API Template
 **Roadmap Step:** 5
 **Problem it solves:** A production-ready API template with health checks, Docker, and CI/CD.
 
@@ -562,7 +562,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ---
 
-### Project 4: NotifyMe — Notification Service
+### Project 4: NotifyMe - Notification Service
 **Roadmap Step:** 6
 **Problem it solves:** Send email/SMS notifications based on events (scheduled or triggered).
 
@@ -581,7 +581,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ---
 
-### Project 5: SpeedShop — E-Commerce API with Caching
+### Project 5: SpeedShop - E-Commerce API with Caching
 **Roadmap Step:** 7
 **Problem it solves:** Product catalog with search, filtering, and a shopping cart.
 
@@ -600,7 +600,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ---
 
-### Project 6: TestCraft — Fully Tested API
+### Project 6: TestCraft - Fully Tested API
 **Roadmap Step:** 8
 **Problem it solves:** A project specifically designed to demonstrate comprehensive testing skills.
 
@@ -619,7 +619,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 ---
 
-### Project 7: ModularHub — Modular Monolith
+### Project 7: ModularHub - Modular Monolith
 **Roadmap Step:** All steps combined
 **Problem it solves:** A multi-module application (users, orders, notifications) with clean boundaries.
 
@@ -643,7 +643,7 @@ These are not toy projects. Each one solves a real problem and teaches real skil
 
 This is what separates juniors from developers companies actually want to hire.
 
-### Logging — Because "It Works on My Machine" Isn't Debugging
+### Logging - Because "It Works on My Machine" Isn't Debugging
 
 Use **Serilog** with structured logging. Every log entry should be searchable.
 
@@ -657,16 +657,16 @@ _logger.LogInformation("User {UserId} logged in from {IpAddress}", userId, ipAdd
 
 **Why it matters:** When your API crashes at 2 AM, logs are the only thing standing between you and a long night. Structured logs let you filter by UserId, find the exact request that failed, and understand what happened.
 
-### Health Checks — Because Load Balancers Need to Know
+### Health Checks - Because Load Balancers Need to Know
 
 Every production API needs a `/health` endpoint. At minimum, check:
 - Database connectivity
 - External service availability
 - Disk space (if applicable)
 
-**Why it matters:** Kubernetes, Azure App Service, AWS ELB — they all use health checks to route traffic. No health check = your broken instance keeps receiving requests.
+**Why it matters:** Kubernetes, Azure App Service, AWS ELB - they all use health checks to route traffic. No health check = your broken instance keeps receiving requests.
 
-### Configuration — Because Hardcoding Gets You Fired
+### Configuration - Because Hardcoding Gets You Fired
 
 Use the **Options pattern** with `appsettings.json`:
 - `appsettings.json` → defaults
@@ -676,16 +676,16 @@ Use the **Options pattern** with `appsettings.json`:
 
 **Never commit secrets. Use User Secrets locally, environment variables or a vault in production.**
 
-### Observability — Because You Can't Fix What You Can't See
+### Observability - Because You Can't Fix What You Can't See
 
 Start with the basics:
 - **Logs** → What happened (Serilog → Seq or console in JSON format)
 - **Metrics** → How much is happening (request count, response times)
 - **Traces** → The path of a request through your system
 
-In 2026, OpenTelemetry is the standard. But start with good logging and health checks — you can add tracing later.
+In 2026, OpenTelemetry is the standard. But start with good logging and health checks - you can add tracing later.
 
-### Error Handling with ProblemDetails — Because Users Deserve Good Errors
+### Error Handling with ProblemDetails - Because Users Deserve Good Errors
 
 RFC 9457 defines a standard error format. ASP.NET Core supports it natively.
 
@@ -755,8 +755,8 @@ This plan assumes you can dedicate 2-3 hours per day. Adjust based on your sched
 - AuthGuard project (start)
 
 **Practice:**
-- Try breaking your API with bad input — does it respond correctly?
-- Read your logs — can you find specific events?
+- Try breaking your API with bad input - does it respond correctly?
+- Read your logs - can you find specific events?
 
 ---
 
@@ -828,7 +828,7 @@ You now have:
 Next steps:
 1. Build Project 5 (SpeedShop) or Project 7 (ModularHub)
 2. Start contributing to open-source .NET projects
-3. Apply for jobs — you're ready for junior/mid-level .NET positions
+3. Apply for jobs - you're ready for junior/mid-level .NET positions
 
 ---
 
@@ -879,7 +879,7 @@ Next steps:
 
 Here's what I'd do. No sugar-coating.
 
-**Month 1:** I'd learn C# properly. Not by reading a book — by writing code every single day. I'd build a CRUD API in the first week and a more complex one by week 3. I'd use ASP.NET Core Minimal APIs because they're simpler, and I'd switch to controllers when I need them.
+**Month 1:** I'd learn C# properly. Not by reading a book - by writing code every single day. I'd build a CRUD API in the first week and a more complex one by week 3. I'd use ASP.NET Core Minimal APIs because they're simpler, and I'd switch to controllers when I need them.
 
 **Month 2:** I'd add a real database with EF Core, learn JWT auth, and make my API production-quality with proper error handling and logging. I'd Dockerize everything.
 

@@ -20,25 +20,25 @@ The complete step-by-step guide covering:
 
 ### [Companion Code Templates](templates/)
 Production-ready starter code:
-- [Program.cs](templates/Program.cs) — Minimal production-ready setup
-- [Endpoints](templates/Endpoints/TaskEndpoints.cs) — Full CRUD API with Minimal APIs
-- [DbContext](templates/Data/AppDbContext.cs) — EF Core with proper entity configuration
-- [DI Registration](templates/DependencyInjection.cs) — Clean service registration
-- [Dockerfile](templates/Dockerfile) — Multi-stage, Alpine-based, non-root
-- [docker-compose.yml](templates/docker-compose.yml) — Full local dev stack
-- [CI/CD Pipeline](templates/.github/workflows/ci.yml) — GitHub Actions
-- [appsettings.json](templates/appsettings.json) — Structured config with Serilog
+- [Program.cs](templates/Program.cs) - Minimal production-ready setup
+- [Endpoints](templates/Endpoints/TaskEndpoints.cs) - Full CRUD API with Minimal APIs
+- [DbContext](templates/Data/AppDbContext.cs) - EF Core with proper entity configuration
+- [DI Registration](templates/DependencyInjection.cs) - Clean service registration
+- [Dockerfile](templates/Dockerfile) - Multi-stage, Alpine-based, non-root
+- [docker-compose.yml](templates/docker-compose.yml) - Full local dev stack
+- [CI/CD Pipeline](templates/.github/workflows/ci.yml) - GitHub Actions
+- [appsettings.json](templates/appsettings.json) - Structured config with Serilog
 
 **Code Examples:**
-- [Logging](templates/Examples/LoggingExample.cs) — Structured logging patterns
-- [Validation](templates/Examples/ValidationExample.cs) — FluentValidation setup
-- [Error Handling](templates/Examples/ErrorHandlingExample.cs) — ProblemDetails + global exception handler
+- [Logging](templates/Examples/LoggingExample.cs) - Structured logging patterns
+- [Validation](templates/Examples/ValidationExample.cs) - FluentValidation setup
+- [Error Handling](templates/Examples/ErrorHandlingExample.cs) - ProblemDetails + global exception handler
 
 ### [Checklists](checklists/)
 Track your progress:
-- [Step-by-Step Checklist](checklists/step-by-step-checklist.md) — Know exactly when you're ready to move on
-- [Production Readiness](checklists/production-readiness.md) — Pre-deployment verification
-- [12-Week Progress Tracker](checklists/weekly-progress.md) — Stay on track
+- [Step-by-Step Checklist](checklists/step-by-step-checklist.md) - Know exactly when you're ready to move on
+- [Production Readiness](checklists/production-readiness.md) - Pre-deployment verification
+- [12-Week Progress Tracker](checklists/weekly-progress.md) - Stay on track
 
 ---
 
@@ -98,10 +98,10 @@ Roadmap 2026/
 
 ## Quick Start
 
-1. **Read** [the roadmap](docs/roadmap.md) — understand the full journey
-2. **Check** [the step 1 checklist](checklists/step-by-step-checklist.md) — know your starting point
+1. **Read** [the roadmap](docs/roadmap.md) - understand the full journey
+2. **Check** [the step 1 checklist](checklists/step-by-step-checklist.md) - know your starting point
 3. **Copy** the [templates](templates/) into your first project
-4. **Build** — follow the 12-week plan
+4. **Build** - follow the 12-week plan
 5. **Track** your progress with the [weekly tracker](checklists/weekly-progress.md)
 
 ---

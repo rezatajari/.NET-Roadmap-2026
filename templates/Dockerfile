@@ -25,7 +25,7 @@ RUN dotnet build "TaskFlow.Api.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "TaskFlow.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# Runtime stage — use the smallest possible image
+# Runtime stage - use the smallest possible image
 FROM mcr.microsoft.com/dotnet/aspnet:9.0-alpine AS runtime
 WORKDIR /app
 

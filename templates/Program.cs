@@ -3,7 +3,7 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // -----------------------------------------------------------
-// Logging — Serilog with structured logging
+// Logging - Serilog with structured logging
 // -----------------------------------------------------------
 builder.Host.UseSerilog((context, config) =>
     config.ReadFrom.Configuration(context.Configuration));
@@ -68,7 +68,7 @@ builder.Services.AddRateLimiter(options =>
 var app = builder.Build();
 
 // -----------------------------------------------------------
-// Middleware Pipeline — ORDER MATTERS
+// Middleware Pipeline - ORDER MATTERS
 // -----------------------------------------------------------
 
 // 1. Exception handling (outermost)

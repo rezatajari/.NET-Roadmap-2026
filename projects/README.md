@@ -93,7 +93,7 @@ A notification service that sends emails/SMS based on events or schedules.
 ## Project 5: SpeedShop
 **Step:** 7 | **Difficulty:** Intermediate-Advanced
 
-An e-commerce API with product catalog, search, and cart — focused on performance.
+An e-commerce API with product catalog, search, and cart - focused on performance.
 
 ### Core Features
 - Product CRUD with categories
@@ -162,9 +162,9 @@ A modular monolith combining everything you've learned. Multiple modules (Users,
    - How to run it (`docker-compose up`)
    - API documentation (Swagger link)
    - Architecture diagram (simple)
-3. **Include tests** — this is what hiring managers look for
-4. **Use conventional commits** — shows professionalism
-5. **Add a CI badge** — shows the project builds and tests pass
+3. **Include tests** - this is what hiring managers look for
+4. **Use conventional commits** - shows professionalism
+5. **Add a CI badge** - shows the project builds and tests pass
 
 ### Example README Badge Section
 ```markdown
