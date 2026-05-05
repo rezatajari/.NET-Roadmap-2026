@@ -1,54 +1,60 @@
-# Production Readiness Checklist
+# چک‌لیست آمادگی برای Production
 
-Use this before deploying ANY .NET API to production.
+قبل از استقرار هر API دات نت در محیط production از این استفاده کنید.
 
-## Security
-- [ ] No secrets in source code or config files
-- [ ] HTTPS is enforced
-- [ ] CORS is configured (not `AllowAll` in production)
-- [ ] JWT tokens have reasonable expiration
-- [ ] Input validation on all endpoints
-- [ ] SQL injection prevention (parameterized queries / EF Core)
-- [ ] Rate limiting is configured
-- [ ] No sensitive data in logs
-- [ ] Authentication and authorization are working
-- [ ] API keys / secrets rotated from development values
+## امنیت
 
-## Reliability
-- [ ] Health check endpoint exists and works (`/health`)
-- [ ] Health checks verify all critical dependencies
-- [ ] Global exception handler catches unhandled errors
-- [ ] ProblemDetails format for all error responses
-- [ ] No exception details leaked in production responses
-- [ ] Retry policies on external calls (Polly)
-- [ ] Circuit breaker on flaky dependencies
+* [ ] هیچ secretی در کد منبع یا فایل‌های تنظیمات وجود نداشته باشد
+* [ ] استفاده از HTTPS اجباری باشد
+* [ ] CORS پیکربندی شده باشد (در production روی `AllowAll` نباشد)
+* [ ] توکن‌های JWT زمان انقضای معقول داشته باشند
+* [ ] اعتبارسنجی ورودی برای تمام endpointها انجام شده باشد
+* [ ] جلوگیری از SQL injection (کوئری‌های پارامتری / EF Core)
+* [ ] محدودسازی نرخ درخواست (Rate limiting) پیکربندی شده باشد
+* [ ] هیچ داده حساس در لاگ‌ها ثبت نشود
+* [ ] احراز هویت و مجوزدهی به‌درستی کار کند
+* [ ] API keyها / secretها از مقادیر توسعه تغییر داده شده باشند
 
-## Observability
-- [ ] Structured logging is configured (Serilog)
-- [ ] Request logging middleware is active
-- [ ] Correlation IDs on requests (for tracing)
-- [ ] Log levels are appropriate (not everything as Information)
-- [ ] Logs are shipped to a central location
-- [ ] Basic metrics are available (request count, latency)
+## پایداری
 
-## Performance
-- [ ] Database indexes on frequently queried columns
-- [ ] AsNoTracking() on read-only queries
-- [ ] Pagination on list endpoints
-- [ ] Caching strategy for read-heavy data
-- [ ] No N+1 query problems
-- [ ] Connection pooling configured
+* [ ] endpoint بررسی سلامت وجود داشته باشد و کار کند (`/health`)
+* [ ] بررسی‌های سلامت تمام وابستگی‌های حیاتی را پوشش دهند
+* [ ] مدیریت سراسری خطا، خطاهای مدیریت‌نشده را دریافت کند
+* [ ] فرمت ProblemDetails برای تمام پاسخ‌های خطا استفاده شود
+* [ ] جزئیات exception در پاسخ‌های production نشت نکند
+* [ ] برای فراخوانی‌های خارجی سیاست retry وجود داشته باشد (Polly)
+* [ ] برای وابستگی‌های ناپایدار circuit breaker در نظر گرفته شده باشد
 
-## Deployment
-- [ ] Multi-stage Dockerfile (small final image)
-- [ ] App runs as non-root user in container
-- [ ] Environment-specific configuration works
-- [ ] Database migrations run safely
-- [ ] CI/CD pipeline builds, tests, and deploys
-- [ ] Rollback plan exists
+## مشاهده‌پذیری
 
-## Documentation
-- [ ] OpenAPI/Swagger documents all endpoints
-- [ ] README explains how to run the project
-- [ ] Environment variables are documented
-- [ ] API versioning strategy is documented
+* [ ] لاگ‌گیری ساختاریافته پیکربندی شده باشد (Serilog)
+* [ ] middleware لاگ‌گیری درخواست فعال باشد
+* [ ] برای درخواست‌ها Correlation ID وجود داشته باشد (برای رهگیری)
+* [ ] سطح لاگ‌ها مناسب تنظیم شده باشد (همه‌چیز روی Information نباشد)
+* [ ] لاگ‌ها به یک محل متمرکز ارسال شوند
+* [ ] معیارهای پایه در دسترس باشند (تعداد درخواست، تأخیر)
+
+## عملکرد
+
+* [ ] ایندکس‌های پایگاه داده روی ستون‌های پرتکرار وجود داشته باشد
+* [ ] استفاده از `AsNoTracking()` در کوئری‌های فقط خواندنی
+* [ ] صفحه‌بندی در endpointهای لیستی اعمال شده باشد
+* [ ] استراتژی کش برای داده‌های پرتکرار تعریف شده باشد
+* [ ] مشکل N+1 query وجود نداشته باشد
+* [ ] connection pooling پیکربندی شده باشد
+
+## استقرار
+
+* [ ] Dockerfile چندمرحله‌ای (با ایمیج نهایی سبک)
+* [ ] اپلیکیشن در کانتینر با کاربر non-root اجرا شود
+* [ ] تنظیمات وابسته به محیط به‌درستی کار کنند
+* [ ] migrationهای پایگاه داده به‌صورت امن اجرا شوند
+* [ ] پایپ‌لاین CI/CD بیلد، تست و استقرار را انجام دهد
+* [ ] برنامه بازگشت (rollback) وجود داشته باشد
+
+## مستندات
+
+* [ ] OpenAPI/Swagger تمام endpointها را مستند کرده باشد
+* [ ] README نحوه اجرای پروژه را توضیح دهد
+* [ ] متغیرهای محیطی مستند شده باشند
+* [ ] استراتژی versioning برای API مستند شده باشد
