@@ -23,7 +23,7 @@
 ### [تمپلیت‌های کد همراه](templates/)
 
 کدهای شروع آماده برای production:
-
+<div dir="rtl">
 * [Program.cs](templates/Program.cs) - تنظیمات حداقلی آماده برای production
 * [Endpoints](templates/Endpoints/TaskEndpoints.cs) - API کامل CRUD با Minimal APIs
 * [DbContext](templates/Data/AppDbContext.cs) - EF Core با پیکربندی صحیح entityها
@@ -46,7 +46,7 @@
 * [چک‌لیست گام‌به‌گام](checklists/step-by-step-checklist.md) - دقیقاً بدانید چه زمانی آماده رفتن به مرحله بعد هستید
 * [آمادگی برای Production](checklists/production-readiness.md) - بررسی قبل از استقرار
 * [پیگیری پیشرفت ۱۲ هفته‌ای](checklists/weekly-progress.md) - در مسیر بمانید
-
+</div>
 ---
 
 ## ساختار مخزن
