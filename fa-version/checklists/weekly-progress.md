@@ -1,58 +1,70 @@
-# 12-Week Progress Tracker
+ترجمه با حفظ کامل ساختار:
 
-Track your weekly progress through the roadmap.
+---
 
-## Week 1-2: C# & First API
-- [ ] Completed C# fundamentals (classes, interfaces, async/await, LINQ)
-- [ ] Created first Minimal API project
-- [ ] Built TaskFlow API v1 (in-memory, 5 endpoints)
-- [ ] Tested all endpoints with Swagger
-- [ ] Built a second CRUD API without a tutorial
-- [ ] Built a third CRUD API without a tutorial
+# پیگیری پیشرفت ۱۲ هفته‌ای
 
-## Week 3-4: Database Integration
-- [ ] Set up EF Core with PostgreSQL
-- [ ] Created entities with proper configurations
-- [ ] Ran first migration
-- [ ] Added relationships (categories/tags to tasks)
-- [ ] Inspected generated SQL queries
-- [ ] Practiced writing raw SQL equivalents
-- [ ] Created and rolled back a migration
+پیشرفت هفتگی خود را در مسیر نقشه راه پیگیری کنید.
 
-## Week 5-6: Validation, Errors & Logging
-- [ ] Added FluentValidation to TaskFlow API
-- [ ] Implemented ProblemDetails for all error responses
-- [ ] Added global exception handling middleware
-- [ ] Set up Serilog with structured logging
-- [ ] Started AuthGuard project (registration/login)
-- [ ] Tested breaking API with bad input
+## هفته ۱-۲: C# و اولین API
 
-## Week 7-8: Authentication & Authorization
-- [ ] Completed AuthGuard project (JWT + refresh tokens)
-- [ ] Added authentication to TaskFlow API
-- [ ] Implemented role-based access control
-- [ ] Inspected JWT tokens on jwt.io
-- [ ] Tested 401/403 responses
-- [ ] Users can only access their own tasks
+* [ ] تکمیل مبانی C# (کلاس‌ها، interfaceها، async/await، LINQ)
+* [ ] ایجاد اولین پروژه Minimal API
+* [ ] ساخت TaskFlow API نسخه ۱ (در حافظه، ۵ endpoint)
+* [ ] تست تمام endpointها با Swagger
+* [ ] ساخت یک API CRUD دوم بدون استفاده از آموزش
+* [ ] ساخت یک API CRUD سوم بدون استفاده از آموزش
 
-## Week 9-10: Production Readiness
-- [ ] Created multi-stage Dockerfile
-- [ ] Set up docker-compose with PostgreSQL + Redis
-- [ ] Added health checks
-- [ ] Implemented Options pattern for configuration
-- [ ] Created GitHub Actions CI pipeline
-- [ ] Ran full stack in Docker successfully
+## هفته ۳-۴: یکپارچه‌سازی پایگاه داده
 
-## Week 11-12: Caching, Jobs & Testing
-- [ ] Added Redis caching to TaskFlow API
-- [ ] Measured performance before/after caching
-- [ ] Created a background service for notifications
-- [ ] Wrote unit tests for service layer
-- [ ] Wrote integration tests with WebApplicationFactory
-- [ ] All tests pass in CI
+* [ ] راه‌اندازی EF Core با PostgreSQL
+* [ ] ایجاد entityها با پیکربندی صحیح
+* [ ] اجرای اولین migration
+* [ ] اضافه کردن رابطه‌ها (category/tag برای taskها)
+* [ ] بررسی کوئری‌های SQL تولیدشده
+* [ ] تمرین نوشتن معادل SQL به‌صورت دستی
+* [ ] ایجاد و rollback یک migration
 
-## Post-12-Week Goals
-- [ ] Started SpeedShop or ModularHub project
-- [ ] Explored open-source .NET projects for contributions
-- [ ] Updated GitHub profile with portfolio projects
-- [ ] Started applying for .NET positions
+## هفته ۵-۶: اعتبارسنجی، خطا و لاگ‌گیری
+
+* [ ] اضافه کردن FluentValidation به TaskFlow API
+* [ ] پیاده‌سازی ProblemDetails برای تمام پاسخ‌های خطا
+* [ ] اضافه کردن middleware برای مدیریت سراسری خطا
+* [ ] راه‌اندازی Serilog با لاگ‌گیری ساختاریافته
+* [ ] شروع پروژه AuthGuard (ثبت‌نام/ورود)
+* [ ] تست خراب کردن API با ورودی نامعتبر
+
+## هفته ۷-۸: احراز هویت و مجوزدهی
+
+* [ ] تکمیل پروژه AuthGuard (JWT + refresh token)
+* [ ] اضافه کردن احراز هویت به TaskFlow API
+* [ ] پیاده‌سازی role-based access control
+* [ ] بررسی توکن‌های JWT در jwt.io
+* [ ] تست پاسخ‌های 401 و 403
+* [ ] کاربران فقط به taskهای خودشان دسترسی دارند
+
+## هفته ۹-۱۰: آمادگی برای Production
+
+* [ ] ایجاد Dockerfile چندمرحله‌ای
+* [ ] راه‌اندازی docker-compose با PostgreSQL + Redis
+* [ ] اضافه کردن health check
+* [ ] پیاده‌سازی Options pattern برای پیکربندی
+* [ ] ایجاد pipeline در GitHub Actions برای CI
+* [ ] اجرای کامل استک در Docker با موفقیت
+
+## هفته ۱۱-۱۲: کشینگ، jobها و تست
+
+* [ ] اضافه کردن caching با Redis به TaskFlow API
+* [ ] اندازه‌گیری عملکرد قبل و بعد از caching
+* [ ] ایجاد یک سرویس پس‌زمینه برای نوتیفیکیشن‌ها
+* [ ] نوشتن تست واحد برای لایه سرویس
+* [ ] نوشتن تست یکپارچه با WebApplicationFactory
+* [ ] تمام تست‌ها در CI پاس می‌شوند
+
+## اهداف بعد از ۱۲ هفته
+
+* [ ] شروع پروژه SpeedShop یا ModularHub
+* [ ] بررسی پروژه‌های متن‌باز دات نت برای مشارکت
+* [ ] به‌روزرسانی پروفایل GitHub با پروژه‌های پورتفولیو
+* [ ] شروع اپلای برای موقعیت‌های شغلی دات نت
+
