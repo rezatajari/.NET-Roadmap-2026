@@ -1,228 +1,265 @@
-# Step 1 Checklist: Build Your First API
-
-Use this checklist to track your progress. Don't move to Step 2 until everything is checked.
-
-## C# Fundamentals
-- [ ] I can create classes with properties and methods
-- [ ] I understand interfaces and why they exist
-- [ ] I can use async/await and know why it matters
-- [ ] I can write LINQ queries (Where, Select, FirstOrDefault, Any)
-- [ ] I understand null safety (nullable reference types)
-- [ ] I know the difference between value types and reference types
-
-## ASP.NET Core Basics
-- [ ] I can create a new ASP.NET Core project from scratch
-- [ ] I understand the request pipeline (middleware)
-- [ ] I can create Minimal API endpoints
-- [ ] I can create Controller-based endpoints
-- [ ] I understand routing (attribute routing, route parameters)
-- [ ] I can use dependency injection (register + inject services)
-
-## REST API Concepts
-- [ ] I know when to use GET, POST, PUT, DELETE
-- [ ] I return correct status codes (200, 201, 204, 400, 404, 500)
-- [ ] I can serialize/deserialize JSON
-- [ ] I can use Swagger/OpenAPI to test my endpoints
-- [ ] I understand query parameters vs route parameters
-
-## Proof of Understanding
-- [ ] I can build a complete CRUD API without following a tutorial
-- [ ] I can explain what middleware is to someone else
-- [ ] I can register and inject a service using DI
-- [ ] I can handle basic errors (return 404 when item not found)
+ترجمه با حفظ کامل ساختار، ترتیب و سبک:
 
 ---
 
-# Step 2 Checklist: Add a Database
+# چک‌لیست مرحله ۱: ساخت اولین API
+
+از این چک‌لیست برای پیگیری پیشرفت خود استفاده کنید. تا زمانی که همه موارد تیک نخورده‌اند به مرحله ۲ نروید.
+
+## مبانی C#
+
+* [ ] می‌توانم کلاس‌هایی با property و method ایجاد کنم
+* [ ] interfaceها را می‌فهمم و می‌دانم چرا وجود دارند
+* [ ] می‌توانم از async/await استفاده کنم و می‌دانم چرا مهم است
+* [ ] می‌توانم کوئری‌های LINQ بنویسم (Where, Select, FirstOrDefault, Any)
+* [ ] null safety را درک می‌کنم (nullable reference types)
+* [ ] تفاوت بین value type و reference type را می‌دانم
+
+## مبانی ASP.NET Core
+
+* [ ] می‌توانم یک پروژه ASP.NET Core را از صفر ایجاد کنم
+* [ ] request pipeline (middleware) را درک می‌کنم
+* [ ] می‌توانم endpointهای Minimal API ایجاد کنم
+* [ ] می‌توانم endpointهای مبتنی بر Controller ایجاد کنم
+* [ ] routing را درک می‌کنم (attribute routing، پارامترهای مسیر)
+* [ ] می‌توانم از dependency injection استفاده کنم (ثبت + تزریق سرویس‌ها)
+
+## مفاهیم REST API
+
+* [ ] می‌دانم چه زمانی از GET، POST، PUT، DELETE استفاده کنم
+* [ ] status codeهای صحیح برمی‌گردانم (200، 201، 204، 400، 404، 500)
+* [ ] می‌توانم JSON را serialize/deserialize کنم
+* [ ] می‌توانم از Swagger/OpenAPI برای تست endpointها استفاده کنم
+* [ ] تفاوت query parameter و route parameter را درک می‌کنم
+
+## اثبات درک
+
+* [ ] می‌توانم بدون دنبال کردن آموزش، یک API کامل CRUD بسازم
+* [ ] می‌توانم برای شخص دیگری توضیح دهم middleware چیست
+* [ ] می‌توانم یک سرویس را با DI ثبت و تزریق کنم
+* [ ] می‌توانم خطاهای پایه را مدیریت کنم (مثلاً وقتی آیتم پیدا نشد 404 برگردانم)
+
+---
+
+# چک‌لیست مرحله ۲: اضافه کردن پایگاه داده
 
 ## EF Core
-- [ ] I can set up a DbContext with entity configurations
-- [ ] I can create and apply migrations
-- [ ] I can rollback a migration
-- [ ] I understand Code First vs Database First (and chose Code First)
-- [ ] I can configure relationships (one-to-many, many-to-many)
-- [ ] I know the difference between Fluent API and Data Annotations
 
-## SQL Basics
-- [ ] I can write a SELECT query with WHERE and ORDER BY
-- [ ] I understand JOINs (INNER, LEFT)
-- [ ] I know what an INDEX is and when to create one
-- [ ] I can look at EF Core's generated SQL and understand it
+* [ ] می‌توانم یک DbContext با پیکربندی entityها راه‌اندازی کنم
+* [ ] می‌توانم migration ایجاد و اعمال کنم
+* [ ] می‌توانم یک migration را rollback کنم
+* [ ] تفاوت Code First و Database First را درک می‌کنم (و Code First را انتخاب کرده‌ام)
+* [ ] می‌توانم رابطه‌ها را پیکربندی کنم (one-to-many، many-to-many)
+* [ ] تفاوت Fluent API و Data Annotations را می‌دانم
 
-## Data Access Patterns
-- [ ] I use DbContext directly (not wrapped in a generic repository)
-- [ ] I understand when to use AsNoTracking()
-- [ ] I can explain Include() and what SQL it generates
-- [ ] I handle concurrent updates properly
+## مبانی SQL
 
-## Proof of Understanding
-- [ ] My API persists data to PostgreSQL (or SQL Server)
-- [ ] I have proper migrations checked into source control
-- [ ] I can add a new entity with relationships and generate a migration
-- [ ] I can query related data efficiently
+* [ ] می‌توانم یک کوئری SELECT با WHERE و ORDER BY بنویسم
+* [ ] JOINها را درک می‌کنم (INNER، LEFT)
+* [ ] می‌دانم INDEX چیست و چه زمانی باید ایجاد شود
+* [ ] می‌توانم SQL تولیدشده توسط EF Core را ببینم و درک کنم
 
----
+## الگوهای دسترسی به داده
 
-# Step 3 Checklist: Validation, Errors & Logging
+* [ ] مستقیماً از DbContext استفاده می‌کنم (درون generic repository قرار نمی‌دهم)
+* [ ] می‌دانم چه زمانی از AsNoTracking() استفاده کنم
+* [ ] می‌توانم توضیح دهم Include() چه کاری می‌کند و چه SQLای تولید می‌کند
+* [ ] به‌درستی با به‌روزرسانی‌های همزمان (concurrent updates) برخورد می‌کنم
 
-## Validation
-- [ ] I use FluentValidation for input validation
-- [ ] Validation happens at the API boundary (endpoint level)
-- [ ] Invalid requests return 400 with clear error messages
-- [ ] I validate all user input (never trust the client)
+## اثبات درک
 
-## Error Handling
-- [ ] I have a global exception handler middleware
-- [ ] All errors return ProblemDetails format
-- [ ] I never expose exception details in production
-- [ ] I understand the difference between expected and unexpected errors
-- [ ] 404s return ProblemDetails (not empty responses)
-
-## Logging
-- [ ] I use structured logging (Serilog or built-in ILogger)
-- [ ] I log with proper levels (Information, Warning, Error)
-- [ ] I use message templates, NOT string interpolation
-- [ ] I never log sensitive data (passwords, tokens, PII)
-- [ ] I can search my logs for specific events
-
-## Proof of Understanding
-- [ ] I can break my API with bad input and get a clear 400 response
-- [ ] Unhandled exceptions return a generic 500 with ProblemDetails
-- [ ] I can find a specific request in my logs by searching for a value
+* [ ] API من داده‌ها را در PostgreSQL (یا SQL Server) ذخیره می‌کند
+* [ ] migrationها به‌درستی در source control ثبت شده‌اند
+* [ ] می‌توانم یک entity جدید با رابطه‌ها اضافه کنم و migration بسازم
+* [ ] می‌توانم داده‌های مرتبط را به‌صورت بهینه کوئری بزنم
 
 ---
 
-# Step 4 Checklist: Authentication & Authorization
+# چک‌لیست مرحله ۳: اعتبارسنجی، خطا و لاگ‌گیری
 
-## Authentication
-- [ ] I understand how JWT tokens work (header, payload, signature)
-- [ ] I can implement user registration with password hashing
-- [ ] I can implement login and return JWT + refresh token
-- [ ] I validate tokens properly (issuer, audience, expiration, signature)
-- [ ] I use secure token storage (HttpOnly cookies for web)
+## اعتبارسنجی
 
-## Authorization
-- [ ] I can protect endpoints with [Authorize]
-- [ ] I understand claims-based identity
-- [ ] I can implement role-based access control
-- [ ] I can create custom authorization policies
-- [ ] Users can only access their own resources
+* [ ] برای اعتبارسنجی ورودی از FluentValidation استفاده می‌کنم
+* [ ] اعتبارسنجی در مرز API (سطح endpoint) انجام می‌شود
+* [ ] درخواست‌های نامعتبر با 400 و پیام خطای واضح برگردانده می‌شوند
+* [ ] تمام ورودی‌های کاربر را اعتبارسنجی می‌کنم (هرگز به client اعتماد نمی‌کنم)
 
-## Security Basics
-- [ ] Secrets are NOT in source code
-- [ ] I use User Secrets for local development
-- [ ] Token expiration is reasonable (not days)
-- [ ] I have implemented refresh token rotation
+## مدیریت خطا
 
-## Proof of Understanding
-- [ ] Unauthenticated requests return 401
-- [ ] Unauthorized requests return 403
-- [ ] I can explain the auth flow from login to protected request
-- [ ] Tokens expire and refresh tokens work correctly
+* [ ] یک middleware برای مدیریت سراسری خطا دارم
+* [ ] تمام خطاها در قالب ProblemDetails برگردانده می‌شوند
+* [ ] هرگز جزئیات exception را در production نمایش نمی‌دهم
+* [ ] تفاوت بین خطاهای مورد انتظار و غیرمنتظره را درک می‌کنم
+* [ ] خطاهای 404 در قالب ProblemDetails برگردانده می‌شوند (نه پاسخ خالی)
+
+## لاگ‌گیری
+
+* [ ] از لاگ‌گیری ساختاریافته استفاده می‌کنم (Serilog یا ILogger داخلی)
+* [ ] لاگ‌ها را با سطح مناسب ثبت می‌کنم (Information، Warning، Error)
+* [ ] از message template استفاده می‌کنم، نه string interpolation
+* [ ] هرگز داده حساس را لاگ نمی‌کنم (password، token، PII)
+* [ ] می‌توانم لاگ‌ها را برای یک رویداد خاص جستجو کنم
+
+## اثبات درک
+
+* [ ] می‌توانم با ورودی نامعتبر API را خراب کنم و پاسخ 400 واضح بگیرم
+* [ ] exceptionهای مدیریت‌نشده یک 500 عمومی با ProblemDetails برمی‌گردانند
+* [ ] می‌توانم یک درخواست خاص را با جستجوی یک مقدار در لاگ‌ها پیدا کنم
 
 ---
 
-# Step 5 Checklist: Production Ready
+# چک‌لیست مرحله ۴: احراز هویت و مجوزدهی
+
+## احراز هویت
+
+* [ ] می‌دانم JWT چگونه کار می‌کند (header، payload، signature)
+* [ ] می‌توانم ثبت‌نام کاربر با هش کردن رمز عبور را پیاده‌سازی کنم
+* [ ] می‌توانم login را پیاده‌سازی کرده و JWT + refresh token برگردانم
+* [ ] توکن‌ها را به‌درستی اعتبارسنجی می‌کنم (issuer، audience، expiration، signature)
+* [ ] از ذخیره‌سازی امن توکن استفاده می‌کنم (برای وب: HttpOnly cookie)
+
+## مجوزدهی
+
+* [ ] می‌توانم endpointها را با [Authorize] محافظت کنم
+* [ ] مفهوم claims-based identity را درک می‌کنم
+* [ ] می‌توانم role-based access control پیاده‌سازی کنم
+* [ ] می‌توانم policyهای سفارشی برای مجوزدهی ایجاد کنم
+* [ ] کاربران فقط به منابع خودشان دسترسی دارند
+
+## مبانی امنیت
+
+* [ ] secretها در کد منبع نیستند
+* [ ] برای توسعه لوکال از User Secrets استفاده می‌کنم
+* [ ] زمان انقضای توکن‌ها معقول است (نه چندین روز)
+* [ ] refresh token rotation را پیاده‌سازی کرده‌ام
+
+## اثبات درک
+
+* [ ] درخواست‌های بدون احراز هویت 401 برمی‌گردانند
+* [ ] درخواست‌های بدون مجوز 403 برمی‌گردانند
+* [ ] می‌توانم جریان احراز هویت از login تا درخواست محافظت‌شده را توضیح دهم
+* [ ] توکن‌ها منقضی می‌شوند و refresh token به‌درستی کار می‌کند
+
+---
+
+# چک‌لیست مرحله ۵: آمادگی برای Production
 
 ## Docker
-- [ ] I have a multi-stage Dockerfile
-- [ ] My Docker image uses an Alpine base (small size)
-- [ ] The app runs as a non-root user in the container
-- [ ] I have a docker-compose for local development
-- [ ] I can build and run my app in Docker
 
-## Configuration
-- [ ] I use appsettings.json with environment-specific overrides
-- [ ] I use the Options pattern for strongly typed config
-- [ ] Secrets are in environment variables (not in config files)
-- [ ] I can change config without rebuilding the app
+* [ ] یک Dockerfile چندمرحله‌ای دارم
+* [ ] ایمیج Docker من از Alpine استفاده می‌کند (حجم کم)
+* [ ] اپلیکیشن در کانتینر با کاربر non-root اجرا می‌شود
+* [ ] برای توسعه لوکال docker-compose دارم
+* [ ] می‌توانم اپ را در Docker بیلد و اجرا کنم
+
+## پیکربندی
+
+* [ ] از appsettings.json با overrideهای وابسته به محیط استفاده می‌کنم
+* [ ] از Options pattern برای تنظیمات strongly typed استفاده می‌کنم
+* [ ] secretها در environment variableها هستند (نه در فایل config)
+* [ ] می‌توانم بدون rebuild اپ، تنظیمات را تغییر دهم
 
 ## Health Checks
-- [ ] I have a /health endpoint
-- [ ] Health check verifies database connectivity
-- [ ] Health check verifies Redis connectivity (if used)
+
+* [ ] یک endpoint به نام /health دارم
+* [ ] health check اتصال به پایگاه داده را بررسی می‌کند
+* [ ] health check اتصال به Redis را بررسی می‌کند (در صورت استفاده)
 
 ## CI/CD
-- [ ] I have a GitHub Actions workflow that builds the project
-- [ ] Tests run automatically on every PR
-- [ ] Docker image is built in CI
 
-## Proof of Understanding
-- [ ] I can run my entire app stack with docker-compose up
-- [ ] Config changes don't require code changes or rebuilds
-- [ ] CI catches build failures and test failures automatically
+* [ ] یک workflow در GitHub Actions دارم که پروژه را بیلد می‌کند
+* [ ] تست‌ها روی هر PR به‌صورت خودکار اجرا می‌شوند
+* [ ] ایمیج Docker در CI ساخته می‌شود
 
----
+## اثبات درک
 
-# Step 6 Checklist: Background Jobs & Messaging
-
-## Background Services
-- [ ] I can create a BackgroundService
-- [ ] I understand IHostedService lifecycle
-- [ ] I know why Task.Run in a controller is dangerous
-- [ ] My background jobs handle errors gracefully
-
-## Messaging (when needed)
-- [ ] I understand producer/consumer pattern
-- [ ] I can set up RabbitMQ with MassTransit
-- [ ] I make my consumers idempotent
-- [ ] I handle poison messages / dead letters
-
-## Proof of Understanding
-- [ ] I have a background service that processes work reliably
-- [ ] I can explain when to use in-process vs distributed messaging
-- [ ] Failed jobs are retried and eventually dead-lettered
+* [ ] می‌توانم کل استک اپ را با docker-compose up اجرا کنم
+* [ ] تغییرات config نیاز به تغییر کد یا rebuild ندارند
+* [ ] CI به‌صورت خودکار خطاهای build و test را تشخیص می‌دهد
 
 ---
 
-# Step 7 Checklist: Scale & Optimize
+# چک‌لیست مرحله ۶: کارهای پس‌زمینه و پیام‌رسانی
 
-## Caching
-- [ ] I use output caching for read-heavy endpoints
-- [ ] I can set up Redis for distributed caching
-- [ ] I have a cache invalidation strategy
-- [ ] I cache the right things (not everything)
+## سرویس‌های پس‌زمینه
 
-## Performance
-- [ ] I use pagination on list endpoints
-- [ ] I use AsNoTracking() for read-only queries
-- [ ] I use projections (Select) instead of loading entire entities
-- [ ] I've identified and optimized slow queries
+* [ ] می‌توانم یک BackgroundService ایجاد کنم
+* [ ] lifecycle مربوط به IHostedService را درک می‌کنم
+* [ ] می‌دانم چرا استفاده از Task.Run در controller خطرناک است
+* [ ] jobهای پس‌زمینه من خطاها را به‌درستی مدیریت می‌کنند
 
-## API Design
-- [ ] I have rate limiting configured
-- [ ] I have API versioning
-- [ ] I use Polly for resilience (retry, circuit breaker)
+## پیام‌رسانی (در صورت نیاز)
 
-## Proof of Understanding
-- [ ] I can measure the performance impact of caching
-- [ ] I can identify N+1 query problems
-- [ ] Rate-limited requests return 429
+* [ ] الگوی producer/consumer را درک می‌کنم
+* [ ] می‌توانم RabbitMQ را با MassTransit راه‌اندازی کنم
+* [ ] consumerها را idempotent طراحی می‌کنم
+* [ ] پیام‌های مشکل‌دار (poison / dead letter) را مدیریت می‌کنم
+
+## اثبات درک
+
+* [ ] یک سرویس پس‌زمینه دارم که کارها را به‌صورت پایدار پردازش می‌کند
+* [ ] می‌توانم توضیح دهم چه زمانی از messaging درون‌فرآیندی یا توزیع‌شده استفاده شود
+* [ ] jobهای ناموفق retry می‌شوند و در نهایت به dead-letter منتقل می‌شوند
 
 ---
 
-# Step 8 Checklist: Testing
+# چک‌لیست مرحله ۷: مقیاس‌پذیری و بهینه‌سازی
 
-## Unit Tests
-- [ ] I can write unit tests with xUnit
-- [ ] I can mock dependencies with NSubstitute (or Moq)
-- [ ] I test behavior, not implementation details
-- [ ] I use the Arrange-Act-Assert pattern
+## کشینگ
 
-## Integration Tests
-- [ ] I can test my API with WebApplicationFactory
-- [ ] I can test database interactions with Testcontainers
-- [ ] My tests are independent (don't depend on each other)
-- [ ] I test happy paths AND error paths
+* [ ] برای endpointهای پرتکرار از output caching استفاده می‌کنم
+* [ ] می‌توانم Redis را برای کش توزیع‌شده راه‌اندازی کنم
+* [ ] یک استراتژی invalidation برای کش دارم
+* [ ] چیزهای درست را cache می‌کنم (نه همه‌چیز)
 
-## Testing Strategy
-- [ ] I know what's worth testing (critical business logic, edge cases)
-- [ ] I don't chase 100% coverage
-- [ ] My tests run in CI automatically
-- [ ] I can add a test for a bug before fixing it
+## عملکرد
 
-## Proof of Understanding
-- [ ] I have unit tests for my service layer
-- [ ] I have integration tests for my API endpoints
-- [ ] All tests pass in CI
-- [ ] I can TDD a simple feature
+* [ ] در endpointهای لیستی از pagination استفاده می‌کنم
+* [ ] برای کوئری‌های فقط خواندنی از AsNoTracking() استفاده می‌کنم
+* [ ] به‌جای بارگذاری کامل entityها از projection (Select) استفاده می‌کنم
+* [ ] کوئری‌های کند را شناسایی و بهینه‌سازی کرده‌ام
+
+## طراحی API
+
+* [ ] rate limiting را پیکربندی کرده‌ام
+* [ ] versioning برای API دارم
+* [ ] برای تاب‌آوری از Polly استفاده می‌کنم (retry، circuit breaker)
+
+## اثبات درک
+
+* [ ] می‌توانم تأثیر caching بر عملکرد را اندازه‌گیری کنم
+* [ ] می‌توانم مشکل N+1 query را شناسایی کنم
+* [ ] درخواست‌های محدودشده با 429 برمی‌گردند
+
+---
+
+# چک‌لیست مرحله ۸: تست
+
+## تست واحد
+
+* [ ] می‌توانم با xUnit تست واحد بنویسم
+* [ ] می‌توانم وابستگی‌ها را با NSubstitute (یا Moq) mock کنم
+* [ ] رفتار را تست می‌کنم، نه جزئیات پیاده‌سازی
+* [ ] از الگوی Arrange-Act-Assert استفاده می‌کنم
+
+## تست یکپارچه
+
+* [ ] می‌توانم API را با WebApplicationFactory تست کنم
+* [ ] می‌توانم تعامل با پایگاه داده را با Testcontainers تست کنم
+* [ ] تست‌ها مستقل هستند (به هم وابسته نیستند)
+* [ ] هم مسیرهای موفق و هم مسیرهای خطا را تست می‌کنم
+
+## استراتژی تست
+
+* [ ] می‌دانم چه چیزهایی ارزش تست دارند (منطق تجاری حیاتی، edge caseها)
+* [ ] دنبال 100٪ coverage نیستم
+* [ ] تست‌ها در CI به‌صورت خودکار اجرا می‌شوند
+* [ ] می‌توانم قبل از رفع یک باگ، برای آن تست بنویسم
+
+## اثبات درک
+
+* [ ] برای لایه سرویس تست واحد دارم
+* [ ] برای endpointهای API تست یکپارچه دارم
+* [ ] تمام تست‌ها در CI پاس می‌شوند
+* [ ] می‌توانم یک feature ساده را با TDD توسعه دهم
+
