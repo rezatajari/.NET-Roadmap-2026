@@ -1,172 +1,202 @@
-# Portfolio Projects
-
-Detailed guides for each portfolio project from the roadmap.
+ترجمه با حفظ کامل ساختار:
 
 ---
 
-## Project 1: TaskFlow API
-**Step:** 1-3 | **Difficulty:** Beginner
+# پروژه‌های پورتفولیو
 
-A task management API. CRUD operations, database, validation, error handling, logging.
-
-### Getting Started
-1. Create a new ASP.NET Core Web API project
-2. Use the templates from `/templates` as your starting point
-3. Follow Steps 1-3 in the roadmap
-
-### Core Features
-- Create, read, update, delete tasks
-- Categories and tags
-- Due dates and completion tracking
-- User-specific task lists (after Step 4)
-
-### Extension Ideas (Senior Level)
-- Audit trail (track all changes with timestamps and user)
-- Soft deletes with recovery
-- Task prioritization with drag-and-drop ordering
-- Recurring tasks with scheduling rules
-- Export tasks to CSV/PDF
+راهنمای دقیق برای هر پروژه پورتفولیو از نقشه راه.
 
 ---
 
-## Project 2: AuthGuard
-**Step:** 4 | **Difficulty:** Beginner-Intermediate
+## پروژه ۱: TaskFlow API
 
-A standalone authentication service with JWT, refresh tokens, and role management.
+**مرحله:** ۱-۳ | **سطح سختی:** مبتدی
 
-### Core Features
-- User registration with password hashing (BCrypt)
-- Login with JWT token generation
-- Refresh token rotation
-- Role-based access (Admin, User)
+یک API مدیریت task. شامل عملیات CRUD، پایگاه داده، اعتبارسنجی، مدیریت خطا و لاگ‌گیری.
 
-### Extension Ideas (Senior Level)
-- Two-factor authentication (TOTP with QR code)
-- Account lockout after N failed attempts
-- OAuth2 integration (Google, GitHub login)
-- API key management for service accounts
-- Password reset flow with email verification
+### شروع کار
 
----
+1. ایجاد یک پروژه ASP.NET Core Web API جدید
+2. استفاده از قالب‌های داخل `/templates` به عنوان نقطه شروع
+3. دنبال کردن مراحل ۱ تا ۳ در نقشه راه
 
-## Project 3: ShipReady
-**Step:** 5 | **Difficulty:** Intermediate
+### قابلیت‌های اصلی
 
-A production-ready API template with all the infrastructure pieces.
+* ایجاد، خواندن، ویرایش، حذف taskها
+* دسته‌بندی و tagها
+* تاریخ سررسید و وضعیت تکمیل
+* لیست taskهای مخصوص هر کاربر (بعد از مرحله ۴)
 
-### Core Features
-- Multi-stage Dockerfile
-- docker-compose with PostgreSQL, Redis, Seq
-- Health checks
-- Configuration management
-- GitHub Actions CI/CD
+### ایده‌های توسعه (سطح Senior)
 
-### Extension Ideas (Senior Level)
-- OpenTelemetry tracing
-- Prometheus metrics endpoint
-- Terraform for cloud deployment
-- Multi-environment deployment (staging → production)
-- Security scanning in CI (Trivy, dotnet-security)
+* ثبت کامل تغییرات (audit trail) همراه با زمان و کاربر
+* حذف نرم (soft delete) با قابلیت بازیابی
+* اولویت‌بندی taskها با مرتب‌سازی drag-and-drop
+* taskهای تکرارشونده با قوانین زمان‌بندی
+* خروجی گرفتن به CSV/PDF
 
 ---
 
-## Project 4: NotifyMe
-**Step:** 6 | **Difficulty:** Intermediate
+## پروژه ۲: AuthGuard
 
-A notification service that sends emails/SMS based on events or schedules.
+**مرحله:** ۴ | **سطح سختی:** مبتدی-متوسط
 
-### Core Features
-- Background service for processing notifications
-- Scheduled jobs with Hangfire
-- Email sending (SMTP or SendGrid)
-- RabbitMQ consumer for event-triggered notifications
+یک سرویس احراز هویت مستقل با JWT، refresh token و مدیریت نقش‌ها.
 
-### Extension Ideas (Senior Level)
-- Multi-channel delivery (email, SMS, push notification)
-- User notification preferences
-- Delivery tracking and read receipts
-- Template engine for notification content
-- Dead-letter queue handling with admin dashboard
+### قابلیت‌های اصلی
 
----
+* ثبت‌نام کاربر با هش رمز عبور (BCrypt)
+* ورود با تولید JWT
+* چرخش refresh token
+* نقش‌ها (Admin، User)
 
-## Project 5: SpeedShop
-**Step:** 7 | **Difficulty:** Intermediate-Advanced
+### ایده‌های توسعه (سطح Senior)
 
-An e-commerce API with product catalog, search, and cart - focused on performance.
-
-### Core Features
-- Product CRUD with categories
-- Search and filtering
-- Shopping cart
-- Redis caching for product catalog
-- Cursor-based pagination
-- Rate limiting
-
-### Extension Ideas (Senior Level)
-- Full-text search with PostgreSQL
-- Inventory management with optimistic concurrency
-- Webhook system for order events
-- Performance benchmarks with BenchmarkDotNet
-- API versioning with backward compatibility
+* احراز هویت دو مرحله‌ای (TOTP با QR code)
+* قفل شدن حساب بعد از چند تلاش ناموفق
+* اتصال OAuth2 (Google، GitHub)
+* مدیریت API key برای سرویس‌ها
+* فرایند بازیابی رمز عبور با ایمیل
 
 ---
 
-## Project 6: TestCraft
-**Step:** 8 | **Difficulty:** Intermediate
+## پروژه ۳: ShipReady
 
-A project specifically designed to showcase comprehensive testing skills.
+**مرحله:** ۵ | **سطح سختی:** متوسط
 
-### Core Features
-- Unit tests for business logic (xUnit)
-- Integration tests with WebApplicationFactory
-- Database tests with Testcontainers
-- Mocking external services with NSubstitute
-- Test data builders
+یک قالب API آماده production با تمام زیرساخت‌ها.
 
-### Extension Ideas (Senior Level)
-- Architecture tests with NetArchTest
-- Contract testing for API consumers
-- Mutation testing
-- Test coverage reports in CI
-- Load testing with k6 or NBomber
+### قابلیت‌های اصلی
 
----
+* Docker چندمرحله‌ای
+* docker-compose با PostgreSQL، Redis، Seq
+* health check
+* مدیریت configuration
+* CI/CD با GitHub Actions
 
-## Project 7: ModularHub
-**Step:** All | **Difficulty:** Advanced
+### ایده‌های توسعه (سطح Senior)
 
-A modular monolith combining everything you've learned. Multiple modules (Users, Tasks, Notifications) with clean boundaries.
-
-### Core Features
-- Module-based project structure
-- Each module has its own DbContext
-- Inter-module communication via events
-- Shared kernel for common types
-- Everything from Steps 1-8
-
-### Extension Ideas (Senior Level)
-- Extract a module into a separate service (microservice migration)
-- Feature flags per module
-- Module-level health checks
-- Architectural Decision Records (ADRs)
-- API gateway pattern for module routing
+* tracing با OpenTelemetry
+* metrics با Prometheus
+* استقرار با Terraform
+* deployment چند محیطی (staging → production)
+* اسکن امنیتی در CI (Trivy، dotnet-security)
 
 ---
 
-## How to Present These on GitHub
+## پروژه ۴: NotifyMe
 
-1. **Each project gets its own repository**
-2. **Write a clear README** with:
-   - What the project does
-   - How to run it (`docker-compose up`)
-   - API documentation (Swagger link)
-   - Architecture diagram (simple)
-3. **Include tests** - this is what hiring managers look for
-4. **Use conventional commits** - shows professionalism
-5. **Add a CI badge** - shows the project builds and tests pass
+**مرحله:** ۶ | **سطح سختی:** متوسط
 
-### Example README Badge Section
+سرویس ارسال اعلان (ایمیل/SMS) بر اساس event یا زمان‌بندی.
+
+### قابلیت‌های اصلی
+
+* background service برای پردازش اعلان‌ها
+* jobهای زمان‌بندی شده با Hangfire
+* ارسال ایمیل (SMTP یا SendGrid)
+* مصرف پیام از RabbitMQ
+
+### ایده‌های توسعه (سطح Senior)
+
+* چند کانال ارسال (ایمیل، SMS، push)
+* تنظیمات شخصی اعلان برای هر کاربر
+* پیگیری وضعیت ارسال و read receipt
+* سیستم template برای محتوا
+* مدیریت dead-letter queue با داشبورد
+
+---
+
+## پروژه ۵: SpeedShop
+
+**مرحله:** ۷ | **سطح سختی:** متوسط-پیشرفته
+
+API فروشگاه آنلاین با تمرکز بر performance.
+
+### قابلیت‌های اصلی
+
+* مدیریت محصولات و دسته‌بندی
+* جستجو و فیلتر
+* سبد خرید
+* caching با Redis
+* pagination مبتنی بر cursor
+* rate limiting
+
+### ایده‌های توسعه (سطح Senior)
+
+* جستجوی full-text در PostgreSQL
+* مدیریت موجودی با optimistic concurrency
+* سیستم webhook برای eventهای سفارش
+* benchmark با BenchmarkDotNet
+* نسخه‌بندی API با backward compatibility
+
+---
+
+## پروژه ۶: TestCraft
+
+**مرحله:** ۸ | **سطح سختی:** متوسط
+
+پروژه مخصوص نمایش مهارت تست‌نویسی کامل.
+
+### قابلیت‌های اصلی
+
+* تست واحد با xUnit
+* تست یکپارچه با WebApplicationFactory
+* تست دیتابیس با Testcontainers
+* mock کردن سرویس‌های خارجی
+* test data builder
+
+### ایده‌های توسعه (سطح Senior)
+
+* تست معماری با NetArchTest
+* contract testing برای مصرف‌کننده‌ها
+* mutation testing
+* گزارش coverage در CI
+* تست فشار با k6 یا NBomber
+
+---
+
+## پروژه ۷: ModularHub
+
+**مرحله:** همه مراحل | **سطح سختی:** پیشرفته
+
+یک monolith ماژولار شامل تمام مفاهیم یادگرفته شده (Users، Tasks، Notifications) با مرزهای مشخص.
+
+### قابلیت‌های اصلی
+
+* ساختار ماژولار
+* هر ماژول DbContext مستقل
+* ارتباط بین ماژول‌ها با event
+* shared kernel برای موارد مشترک
+* تمام مفاهیم مراحل ۱ تا ۸
+
+### ایده‌های توسعه (سطح Senior)
+
+* استخراج یک ماژول به microservice
+* feature flag برای هر ماژول
+* health check در سطح ماژول
+* مستندسازی ADR
+* API gateway برای routing ماژول‌ها
+
+---
+
+## نحوه ارائه در GitHub
+
+1. **هر پروژه یک repository جدا داشته باشد**
+2. **README واضح بنویسید شامل:**
+
+   * توضیح پروژه
+   * نحوه اجرا (`docker-compose up`)
+   * لینک Swagger
+   * دیاگرام ساده معماری
+3. **حتماً تست داشته باشید** - مهم‌ترین معیار برای استخدام
+4. **از conventional commits استفاده کنید**
+5. **CI badge اضافه کنید** - نشان می‌دهد پروژه build می‌شود
+
+---
+
+### نمونه بخش badge در README
+
 ```markdown
 ![Build Status](https://github.com/yourusername/taskflow-api/actions/workflows/ci.yml/badge.svg)
 ![.NET](https://img.shields.io/badge/.NET-9.0-purple)
