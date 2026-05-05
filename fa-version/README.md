@@ -10,7 +10,7 @@
 
 ## داخل این مخزن چه چیزهایی هست
 
-### [نقشه راه کامل](fa-version/docs/roadmap.md)
+### [نقشه راه کامل](docs/roadmap.md)
 
 یک راهنمای گام‌به‌گام کامل شامل:
 
@@ -22,32 +22,32 @@
 * چه چیزهایی را یاد نگیرید (که ماه‌ها در زمان شما صرفه‌جویی می‌کند)
 * توصیه‌های صادقانه برای گرفتن اولین شغل دات نت
 
-### [تمپلیت‌های کد همراه](fa-version/templates/)
+### [تمپلیت‌های کد همراه](templates/)
 
 کدهای شروع آماده برای production:
 
-* [Program.cs](fa-version/templates/Program.cs) - تنظیمات حداقلی آماده برای production
-* [Endpoints](fa-version/templates/Endpoints/TaskEndpoints.cs) - API کامل CRUD با Minimal APIs
-* [DbContext](fa-version/templates/Data/AppDbContext.cs) - EF Core با پیکربندی صحیح entityها
-* [DI Registration](fa-version/templates/DependencyInjection.cs) - رجیستر کردن تمیز سرویس‌ها
-* [Dockerfile](fa-version/templates/Dockerfile) - چندمرحله‌ای، مبتنی بر Alpine، بدون دسترسی root
-* [docker-compose.yml](fa-version/templates/docker-compose.yml) - استک کامل توسعه لوکال
-* [CI/CD Pipeline](fa-version/templates/.github/workflows/ci.yml) - GitHub Actions
-* [appsettings.json](fa-version/templates/appsettings.json) - تنظیمات ساختاریافته با Serilog
+* [Program.cs](templates/Program.cs) - تنظیمات حداقلی آماده برای production
+* [Endpoints](templates/Endpoints/TaskEndpoints.cs) - API کامل CRUD با Minimal APIs
+* [DbContext](templates/Data/AppDbContext.cs) - EF Core با پیکربندی صحیح entityها
+* [DI Registration](templates/DependencyInjection.cs) - رجیستر کردن تمیز سرویس‌ها
+* [Dockerfile](templates/Dockerfile) - چندمرحله‌ای، مبتنی بر Alpine، بدون دسترسی root
+* [docker-compose.yml](templates/docker-compose.yml) - استک کامل توسعه لوکال
+* [CI/CD Pipeline](templates/.github/workflows/ci.yml) - GitHub Actions
+* [appsettings.json](templates/appsettings.json) - تنظیمات ساختاریافته با Serilog
 
 **نمونه کدها:**
 
-* [Logging](fa-version/templates/Examples/LoggingExample.cs) - الگوهای لاگ‌گیری ساختاریافته
-* [Validation](fa-version/templates/Examples/ValidationExample.cs) - راه‌اندازی FluentValidation
-* [Error Handling](fa-version/templates/Examples/ErrorHandlingExample.cs) - ProblemDetails + مدیریت سراسری خطا
+* [Logging](templates/Examples/LoggingExample.cs) - الگوهای لاگ‌گیری ساختاریافته
+* [Validation](templates/Examples/ValidationExample.cs) - راه‌اندازی FluentValidation
+* [Error Handling](templates/Examples/ErrorHandlingExample.cs) - ProblemDetails + مدیریت سراسری خطا
 
-### [چک‌لیست‌ها](fa-version/checklists/)
+### [چک‌لیست‌ها](checklists/)
 
 پیگیری پیشرفت شما:
 
-* [چک‌لیست گام‌به‌گام](fa-version/checklists/step-by-step-checklist.md) - دقیقاً بدانید چه زمانی آماده رفتن به مرحله بعد هستید
-* [آمادگی برای Production](fa-version/checklists/production-readiness.md) - بررسی قبل از استقرار
-* [پیگیری پیشرفت ۱۲ هفته‌ای](fa-version/checklists/weekly-progress.md) - در مسیر بمانید
+* [چک‌لیست گام‌به‌گام](checklists/step-by-step-checklist.md) - دقیقاً بدانید چه زمانی آماده رفتن به مرحله بعد هستید
+* [آمادگی برای Production](checklists/production-readiness.md) - بررسی قبل از استقرار
+* [پیگیری پیشرفت ۱۲ هفته‌ای](checklists/weekly-progress.md) - در مسیر بمانید
 
 ---
 
@@ -107,11 +107,11 @@ Roadmap 2026/
 
 ## شروع سریع
 
-1. **بخوانید** [نقشه راه](fa-version/docs/roadmap.md) - درک مسیر کامل
-2. **بررسی کنید** [چک‌لیست مرحله ۱](fa-version/checklists/step-by-step-checklist.md) - نقطه شروع خود را بدانید
-3. **کپی کنید** [تمپلیت‌ها](fa-version/templates/) را در اولین پروژه خود
+1. **بخوانید** [نقشه راه](docs/roadmap.md) - درک مسیر کامل
+2. **بررسی کنید** [چک‌لیست مرحله ۱](checklists/step-by-step-checklist.md) - نقطه شروع خود را بدانید
+3. **کپی کنید** [تمپلیت‌ها](templates/) را در اولین پروژه خود
 4. **بسازید** - برنامه ۱۲ هفته‌ای را دنبال کنید
-5. **پیگیری کنید** پیشرفت خود را با [پیگیری هفتگی](fa-version/checklists/weekly-progress.md)
+5. **پیگیری کنید** پیشرفت خود را با [پیگیری هفتگی](checklists/weekly-progress.md)
 
 ---
 
